@@ -5,19 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
-//   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <header className='flex justify-around items-center py-7 mx-auto max-w-7xl font-font-sg font-bold'>
+    <header className='flex justify-between items-center py-7 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold'>
     <div className='flex justify-between content-center items-center gap-10 '>
-        <div className=''>
+        <div className='hidden lg:block'>
             <FontAwesomeIcon className="fa-2xl" icon={faBars} />
         </div>
-        <div className='mt-0 pt-0 -mt-5'>
+        <div className='mt-0 pt-0 -mt-6'>
             <Link href="/">
               <img className='w-full' src="./assets/logo.png"/></Link>
         </div>
@@ -55,6 +55,49 @@ const NavBar = () => {
       </div>
   </nav>
 
+
+  <div className='md:hidden flex justify-end'>
+        <button onClick={toggleMenu} className='focus:outline-none'>
+        <FontAwesomeIcon className="fa-2xl" icon={faBars} />
+        </button>
+      </div>
+
+      {isOpen && (
+        <nav className='md:hidden absolute top-16 right-0 bg-white text-custom-green shadow-md rounded-md'>
+          
+        <div >
+        <ul className='flex flex-col gap-y-2 text-sm'>
+          <li>
+            <Link href="/travels" className='block px-4 py-2'>
+              Почивки и екскурзии
+            </Link>
+          </li>
+          <li>
+            <Link href="/hotels" className='block px-4 py-2'>
+              Хотели
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog" className='block px-4 py-2'>
+              Блог
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className='block px-4 py-2'>
+              За нас
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className='block px-4 py-2'>
+              Контакти
+            </Link>
+          </li>
+          
+        </ul>
+        </div>
+          
+        </nav>
+      )}
 
 
     </header>
