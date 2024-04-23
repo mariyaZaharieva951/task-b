@@ -13,11 +13,11 @@ const NavBar = () => {
 
   return (
     <header className='flex justify-between items-center py-7 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold'>
-    <div className='flex justify-between content-center items-center gap-10 '>
-        <div className='hidden lg:block'>
+    <div className='flex justify-between content-center items-center gap-6'>
+        <div className='hidden lg:block mt-2'>
             <FontAwesomeIcon className="fa-2xl" icon={faBars} />
         </div>
-        <div className='mt-0 pt-0 -mt-6'>
+        <div className='mt-0 pt-0 -mt-5'>
             <Link href="/">
               <img className='w-full' src="./assets/logo.png"/></Link>
         </div>
