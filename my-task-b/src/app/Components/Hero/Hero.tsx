@@ -1,3 +1,4 @@
+import Boxes from "./Boxes";
 import CountdownTimer from "./CountdownTimer";
 
 const Hero = () => {
@@ -25,6 +26,7 @@ const Hero = () => {
                 <div className="text-center mt-3">
                     <p className="font-custom-font text-slate-200">от 1149,00лв.</p>
                 </div>
+                <Boxes/>
             </div>
         </div>
     )

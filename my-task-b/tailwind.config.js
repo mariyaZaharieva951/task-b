@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'custom-font': ['Montserrat', 'sans-serif']
+      },
+       colors: {
+        'red-bg': '#DD363D',
       }
     },
   },
