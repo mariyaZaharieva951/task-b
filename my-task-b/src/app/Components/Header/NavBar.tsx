@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className='flex justify-between items-center py-7 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold'>
+    <header className='flex justify-between items-center pt-3 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold'>
     <div className='flex justify-between content-center items-center gap-6'>
         <div className='hidden lg:block mt-2'>
             <FontAwesomeIcon className="fa-2xl" icon={faBars} />
@@ -24,7 +24,7 @@ const NavBar = () => {
     </div>
 
   <nav className='hidden md:block lg:flex'>
-      <div >
+      <div className='mt-4'>
         <ul className='flex justify-between gap-x-4 text-sm whitespace-nowrap mx-5'>
           <li>
             <Link href="/travels" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>

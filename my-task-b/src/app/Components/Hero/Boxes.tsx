@@ -4,7 +4,7 @@ import { faBed, faPlane, faLocationDot, faCalendar } from '@fortawesome/free-sol
 const Boxes = () => {
 
     return (
-        <div className='flex justify-center absolute bottom-0' style={{ bottom: '-34%' }}>
+        <div className='flex justify-center absolute bottom-0' style={{ bottom: '-12%' }}>
             <div className="bg-red-bg text-center py-3 px-10 mr-2">
                 <div className="text-white">
                 <FontAwesomeIcon className="fa-1xl" icon={faBed} />

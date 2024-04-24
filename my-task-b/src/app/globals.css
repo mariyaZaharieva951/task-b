@@ -24,6 +24,14 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+h1,
+p, img, header {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
