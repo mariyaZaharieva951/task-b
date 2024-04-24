@@ -13,8 +13,8 @@ const Hero = () => {
                 <img src='./assets/hero.png' width={1920}
         height={587} className="mx-auto w-full lg:w-auto mt-0 pt-0" alt='hero img'/>
             </div>
-            <div className="absolute flex flex-col top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <h1 className="text-center text-4xl text-white font-bold font-custom-font">Арабска
+            <div className="absolute flex flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <h1 className="text-center text-4xl text-white font-bold font-custom-font mt-7 pt-7">Арабска
                 приказка в Йордания</h1>
                 <div className="text-center mt-3">
                     <p className="inline-block border-2 border-white text-slate-200 px-4 py-1 mb-10 font-custom-font">11-15 март</p>
