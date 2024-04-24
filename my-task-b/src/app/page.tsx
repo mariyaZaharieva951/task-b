@@ -11,8 +11,8 @@ export default function Home() {
     <main>
       <NavBar/>
       <Hero/>
-      <div className="flex">
-      <div className="w-1/2">
+      <div className="flex justify-content: flex-end">
+      <div className="w-1/2 ml-10 pl-5">
         <About />
       </div>
       <div className="w-1/2 ml-10 pl-5">
