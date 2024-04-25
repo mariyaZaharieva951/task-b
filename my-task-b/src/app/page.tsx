@@ -6,6 +6,9 @@ import Boxes from "./Components/Hero/Boxes";
 import About from "./Components/About/About";
 import Program from "./Components/Program/Program";
 import Gallery from "./Components/About/Gallery";
+import Promo from "./Components/About/Promo";
+import Singers from "./Components/About/Singers";
+import Hotels from "./Components/About/Hotels";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <div className="w-1/2 ml-10 pl-5">
         <About />
         <Gallery/>
+        <Promo/>
+        <Singers/>
+        <Hotels/>
       </div>
       <div className="w-1/2 ml-10 pl-5">
         <Program />
