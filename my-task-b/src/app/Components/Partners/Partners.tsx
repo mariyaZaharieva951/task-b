@@ -1,7 +1,7 @@
 const Partners = () => {
 
     return (
-        <div className="max-w-[40%] m-auto font-custom-font">
+        <div className="max-w-[40%] m-auto font-custom-font my-12 py-8">
       <h2 className="text-lg font-bold mb-2">Партньори</h2>
       <p className="text-xs w-[55%] mb-8">Our customers accomplish amazing things every day. They work to find cures to cancer, travel to space.</p>
       <div className="grid grid-cols-5 gap-3 text-center">

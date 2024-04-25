@@ -10,6 +10,7 @@ import Promo from "./Components/About/Promo";
 import Singers from "./Components/About/Singers";
 import Hotels from "./Components/About/Hotels";
 import Partners from "./Components/Partners/Partners";
+import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
       </div>
       <Partners/>
+      <Footer/>
     </main>
   );
 }

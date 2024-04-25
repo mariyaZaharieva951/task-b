@@ -15,6 +15,7 @@ module.exports = {
         'red-bg': '#DD363D',
         'gray-bg': '#FAFAFA',
         'gray-tx': '#AFAFAF',
+        'gray-dark': '#323232',
       }
     },
   },
