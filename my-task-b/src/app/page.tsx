@@ -9,6 +9,7 @@ import Gallery from "./Components/About/Gallery";
 import Promo from "./Components/About/Promo";
 import Singers from "./Components/About/Singers";
 import Hotels from "./Components/About/Hotels";
+import Partners from "./Components/Partners/Partners";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Program />
       </div>
       </div>
+      <Partners/>
     </main>
   );
 }

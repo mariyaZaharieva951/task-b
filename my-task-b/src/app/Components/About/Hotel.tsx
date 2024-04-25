@@ -1,6 +1,6 @@
 const Hotel = () => {
   return (
-    <div className="max-w-lg ml-auto font-custom-font text-sm border-b">
+    <div className="max-w-lg ml-auto font-custom-font text-sm border-b mt-4">
         <div className="flex gap-1">
             <img className="size-[5%] " src='./assets/hotel.png'/>
             <h2 className="text-lg font-bold mb-4">Grand Halic 4****</h2>
