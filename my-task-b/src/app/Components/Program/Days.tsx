@@ -3,11 +3,11 @@ import { IoTodayOutline } from "react-icons/io5";
 const Days = () => {
   return (
     <>
-    <div className="font-custom-font text-base">
+    <div className="font-custom-font text-sm">
       <div className="flex gap-1">
         <IoTodayOutline size={45} className="text-red-bg" />
         <div className="ml-2">
-          <p className="font-bold text-[#AFAFAF]">1 ден(11.03.20)</p>
+          <p className="font-bold text-gray-tx">1 ден(11.03.20)</p>
           <p className="font-bold">София-Акаба</p>
         </div>
       </div>
@@ -19,11 +19,11 @@ const Days = () => {
 Вечеря. Нощувка.</p>
       </div>
     </div>
-    <div className="font-custom-font text-base">
+    <div className="font-custom-font text-sm">
       <div className="flex gap-1">
         <IoTodayOutline size={45} className="text-red-bg" />
         <div className="ml-2">
-          <p className="font-bold text-[#AFAFAF]">1 ден (11.03.20)</p>
+          <p className="font-bold text-gray-tx">1 ден (11.03.20)</p>
           <p className="font-bold">Акаба - Мъртво море - Мадаба - Небо - Акаба</p>
         </div>
       </div>
@@ -35,11 +35,11 @@ const Days = () => {
 Вечеря. Нощувка.</p>
       </div>
     </div>
-    <div className="font-custom-font text-base">
+    <div className="font-custom-font text-sm">
       <div className="flex gap-1">
         <IoTodayOutline size={45} className="text-red-bg" />
         <div className="ml-2">
-          <p className="font-bold text-[#AFAFAF]">3 ден (13.03.20)</p>
+          <p className="font-bold text-gray-tx">3 ден (13.03.20)</p>
           <p className="font-bold">Акаба – Вади Рум – Акаба</p>
         </div>
       </div>
@@ -50,11 +50,11 @@ const Days = () => {
 </p>
       </div>
     </div>
-    <div className="font-custom-font text-base">
+    <div className="font-custom-font text-sm">
       <div className="flex gap-1">
         <IoTodayOutline size={45} className="text-red-bg" />
         <div className="ml-2">
-          <p className="font-bold text-[#AFAFAF]">4 ден (14.03.20)</p>
+          <p className="font-bold text-gray-tx">4 ден (14.03.20)</p>
           <p className="font-bold">Акаба – Петра – Акаба</p>
         </div>
       </div>
@@ -67,11 +67,11 @@ const Days = () => {
 </p>
       </div>
     </div>
-    <div className="font-custom-font text-base">
+    <div className="font-custom-font text-sm">
       <div className="flex gap-1">
         <IoTodayOutline size={45} className="text-red-bg" />
         <div className="ml-2">
-          <p className="font-bold text-[#AFAFAF]">5 ден (15.03.20)</p>
+          <p className="font-bold text-gray-tx">5 ден (15.03.20)</p>
           <p className="font-bold">Акаба – София</p>
         </div>
       </div>
