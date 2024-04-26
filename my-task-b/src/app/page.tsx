@@ -12,6 +12,7 @@ import Hotels from "./Components/About/Hotels";
 import Partners from "./Components/Partners/Partners";
 import Footer from "./Components/Footer/Footer";
 import Clients from "./Components/About/Clients";
+import Covers from "./Components/Covers/Covers";
 
 export default function Home() {
   return (
@@ -31,7 +32,11 @@ export default function Home() {
         <Program />
       </div>
       </div>
-      <Partners/>
+      <div className="bg-gray-bg pt-1">
+        <Covers/>
+        <Partners/>
+      </div>
+      
       <Footer/>
     </main>
   );
