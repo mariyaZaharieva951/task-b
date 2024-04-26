@@ -1,3 +1,4 @@
+import Connections from "./Connections";
 import Mail from "./Mail";
 
 const Footer = () => {
@@ -5,6 +6,7 @@ const Footer = () => {
     return (
         <>
             <Mail/>
+            <Connections/>
         </>
     )
 
