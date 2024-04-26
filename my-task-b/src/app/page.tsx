@@ -11,6 +11,7 @@ import Singers from "./Components/About/Singers";
 import Hotels from "./Components/About/Hotels";
 import Partners from "./Components/Partners/Partners";
 import Footer from "./Components/Footer/Footer";
+import Clients from "./Components/About/Clients";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Promo/>
         <Singers/>
         <Hotels/>
+        <Clients/>
       </div>
       <div className="w-1/2 ml-10 pl-5">
         <Program />

@@ -22,7 +22,7 @@ const Connections = () => {
                 </div>
             </div>
             <div className="col-span-1 text-[10px] w-[50%]">
-                <h4 className="font-bold mt-5 mb-5">Контакти</h4>
+                <h4 className="font-bold text-xs mt-5 mb-5">Контакти</h4>
                 <p className="mb-1">1111 София, България, ул. Христо Белчев 34</p>
                 <p className="mb-1">+359 884 47 30 34// мобилен</p>
                 <p className="mb-1">+359 2 980 44 59//офис</p>
@@ -31,7 +31,7 @@ const Connections = () => {
                 <p className="mb-1">Понеделник - Петък 10.00ч. - 18.00ч.</p>
             </div>
             <div className="col-span-1 text-[10px] mb-11">
-                <h4 className="font-bold mt-5 mb-4">Бързи връзки</h4>
+                <h4 className="font-bold text-xs mt-5 mb-4">Бързи връзки</h4>
                 <div className="grid grid-cols-2">
                 <div className="col-span-1 w-[50%] mb-11">
                     <p className="mb-1">За нас</p>
