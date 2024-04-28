@@ -1,5 +1,4 @@
-'use client'
-import { useState} from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,94 +11,86 @@ const NavBar = () => {
   };
 
   return (
-    <header className='flex justify-between items-center pt-3 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold'>
-    <div className='flex justify-between content-center items-center gap-6'>
+    <header className='flex justify-between items-center pt-3 px-8 mx-5 mx-auto max-w-6xl font-font-sg font-bold relative z-10'>
+      <div className='flex justify-between content-center items-center gap-6'>
         <div className='hidden lg:block mt-2'>
-            <FontAwesomeIcon className="fa-2xl" icon={faBars} />
+          <FontAwesomeIcon className="fa-2xl" icon={faBars} />
         </div>
         <div className='mt-0 pt-0 -mt-5'>
-            <Link href="/">
-              <img className='w-full' src="./assets/logo.png"/></Link>
+          <Link href="/">
+            <img className='w-full' src="./assets/logo.png"/>
+          </Link>
         </div>
-    </div>
-
-  <nav className='hidden md:block lg:flex'>
-      <div className='mt-4'>
-        <ul className='flex justify-between gap-x-4 text-sm whitespace-nowrap mx-5'>
-          <li>
-            <Link href="/travels" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
-              Почивки и екскурзии
-            </Link>
-          </li>
-          <li>
-            <Link href="/hotels" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
-              Хотели
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
-              Блог
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
-              За нас
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
-              Контакти
-            </Link>
-          </li>
-        </ul>
       </div>
-  </nav>
 
+      <nav className='hidden md:block lg:flex'>
+        <div className='mt-4'>
+          <ul className='flex justify-between gap-x-4 text-sm whitespace-nowrap mx-5'>
+            <li>
+              <Link href="/travels" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
+                Почивки и екскурзии
+              </Link>
+            </li>
+            <li>
+              <Link href="/hotels" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
+                Хотели
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
+                Блог
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
+                За нас
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className='hover:bg-gray-100 hover:rounded-md px-4 py-2'>
+                Контакти
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  <div className='md:hidden flex justify-end'>
+      <div className='md:hidden flex justify-end relative'>
         <button onClick={toggleMenu} className='focus:outline-none'>
-        <FontAwesomeIcon className="fa-2xl" icon={faBars} />
+          <FontAwesomeIcon className="fa-2xl" icon={faBars} />
         </button>
+        {isOpen && (
+          <nav className='absolute top-9 right-0 bg-white text-custom-green shadow-md rounded-md'>
+            <ul className='flex flex-col gap-y-2 text-sm'>
+              <li>
+                <Link href="/travels" className='block px-4 py-2'>
+                  Почивки и екскурзии
+                </Link>
+              </li>
+              <li>
+                <Link href="/hotels" className='block px-4 py-2'>
+                  Хотели
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className='block px-4 py-2'>
+                  Блог
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className='block px-4 py-2'>
+                  За нас
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className='block px-4 py-2'>
+                  Контакти
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
-
-      {isOpen && (
-        <nav className='md:hidden absolute top-16 right-0 bg-white text-custom-green shadow-md rounded-md'>
-          
-        <div >
-        <ul className='flex flex-col gap-y-2 text-sm'>
-          <li>
-            <Link href="/travels" className='block px-4 py-2'>
-              Почивки и екскурзии
-            </Link>
-          </li>
-          <li>
-            <Link href="/hotels" className='block px-4 py-2'>
-              Хотели
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" className='block px-4 py-2'>
-              Блог
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className='block px-4 py-2'>
-              За нас
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className='block px-4 py-2'>
-              Контакти
-            </Link>
-          </li>
-          
-        </ul>
-        </div>
-          
-        </nav>
-      )}
-
-
     </header>
   );
 };
