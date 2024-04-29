@@ -19,7 +19,7 @@ function remainingTime(startDate: string,endDate: string) {
   };
 }
 
-export default function CountdownTimer({ startDate,endDate }) {
+export default function CountdownTimer({ startDate, endDate }: { startDate: string, endDate: string }) {
   const [time, setTime] = useState(remainingTime(startDate,endDate));
 
   useEffect(() => {
